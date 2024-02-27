@@ -1,9 +1,9 @@
 package StringBasic;
-
+//In  a string "mango123" check which character is numeric and which is alpha
 public class isalphabet {
 
 	public static void main(String[] args) {
-      String str="arbind123";
+      String str="mango123";
       char ch[]=str.toCharArray();
       for (int i = 0; i < str.length(); i++)
       {

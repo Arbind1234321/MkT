@@ -1,21 +1,36 @@
 package assignment;
+//Check any 2 strings are anagram or not
+import java.util.Arrays;
 
-public class Assignment46// extends Object
+public class Assignment46
 {
 	
-	static void add() {
-		 System.out.println("helo");
-	}
-	void sub() {
-		
-	}
-
 	public static void main(String[] args) {
-	 Object obj = new Assignment46();
-	 
-	 System.out.println(obj.toString());
-	 System.out.println(obj.equals(obj));
-	 obj.hashCode();
+		String str1="madam";
+		String str2="daamm";
+	   if(str1.length()!=str2.length())
+	   {
+		   System.out.println("given string is not anagram");
+	   }
+	   else
+	   {
+		   char c[]=str1.toCharArray();
+		   char ch[]=str2.toCharArray();
+		   
+		   Arrays.sort(c);
+		   Arrays.sort(ch);
+		   System.out.println(Arrays.toString(c));
+		   System.out.println(Arrays.toString(ch));
+		  // boolean ans=Arrays.equals(ch,c);
+		   if(Arrays.equals(ch,c))
+		   {
+			   System.out.println("anagram");
+		   }
+		   else
+		   {
+			System.out.println("not anagram");   
+		   }
+	   }
 
 	}
 
