@@ -3,7 +3,7 @@ package assignment;
 public class Assignment46// extends Object
 {
 	
-	void add() {
+	static void add() {
 		 System.out.println("helo");
 	}
 
@@ -12,6 +12,7 @@ public class Assignment46// extends Object
 	 
 	 System.out.println(obj.toString());
 	 System.out.println(obj.equals(obj));
+	 obj.hashCode();
 
 	}
 
