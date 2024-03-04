@@ -1,11 +1,15 @@
 package javabasic;
 
-public class Child extends parent{
-	 
-	 void m2()
+public class Child {
+
+	public static void main(String[] args)
 	{
-		System.out.println("child");
+		String str="GroTechMinds";
+		for (int i = 0; i <str.length(); i++)
+		{
+		 System.out.println(str.charAt(i));	
+		}
+		
+		
 	}
-	 
-	 
 }
