@@ -1,16 +1,21 @@
 package javabasic;
 
-import java.util.Scanner;
+import DemoJava.Test1;
 
-public class Demo1 {
+public class Demo1 extends Test1 {
 
+	
+	public void accessParent() {
+        // Can access protected members from Parent
+       
+    
+    }
 	public static void main(String[] args) {
-		Scanner sc= new Scanner(System.in);
-		int r=sc.nextInt();
-		double area=3.14*r*r;
-		
-		System.out.println(area);
-
+	
+    Demo1 d= new Demo1();
+    d.accessParent();
 	}
+	
+	
 
 }

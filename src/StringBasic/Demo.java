@@ -1,30 +1,28 @@
 package StringBasic;
-import java.util.Scanner;
-public class Demo {
-	int a;
-	int b;
-	Scanner sc;
+
+public  class Demo{
+	
+	String name;
+	int roll;
+	public Demo(String name, int roll)
 	{
-		System.out.println("Enter no");
-		sc = new Scanner(System.in);
-		a = sc.nextInt();
-		b = sc.nextInt();
+		this.name=name;
+		this.roll=roll;
+				
 	}
-	static void add() {
-		Demo d1 = new Demo();
-		d1.Su();
-
-		System.out.println(d1.a + d1.b);
+	public  void display()
+	{
+		System.out.println(name+ " "+roll);
 	}
-	void Su() {
-		System.out.println(a - b);
+	public String toString() {
+        return this.name +" "+ this.roll;
+    }
+	
+
+	public static void main(String[] args) 
+	{
+     Demo d=new Demo("arbind",10);
+   
+		System.out.println(d.toString());
 	}
-
-	public static void main(String[] args) {
-		Demo d = new Demo();
-		add();
-		System.out.println(d.a);
-
-	}
-
 }

@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author aRBIND
- *
- */
-module JavaMktClass {
-}
