@@ -1,8 +1,12 @@
 package com.aniket;
 
 public class Test1 {
-	 static {
-	        System.out.println("Hello from static block!");
-	        System.exit(0); // Prevents main() check
-	    }
+	int x;
+	public Test1(int x) {
+		super();
+		this.x = x;
+	}
+	public static void main(String[] args) {
+		
+	}
 }
